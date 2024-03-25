@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="Css/style.css" rel="stylesheet" type="text/css" />
+    <link href="Css/home.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="icon" href="https://www.zohowebstatic.com/sites/zweb/images/favicon.ico" type="image/vnd.microsoft.icon"> -->
+    <link rel="icon" id="zod-favicon" type="image/png"
+        href="https://static.zohocdn.com/onezoho/zo/assets/zo/images/fav-icons/connect.7a855dd45f4586c51286ca33aa8edd79.ico" />
+    <title>Connect - User</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Itim&family=Noto+Sans+JP:wght@500&family=Roboto:wght@700&family=Ysabeau+Infant:ital,wght@1,500&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/06599af46a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section style="height: 100vh; width: 100vw; overflow: hidden">
+        <section id="homeOptionsContainer">
+            <section id="burgerButton">
+                <div style="width: 30px;height: 30px;" onclick="menuResponsive()">
+                    <i class="fa-solid fa-bars" style="color: #1e3050;"></i>
+                </div>
+            </section>
+            <a href="home.html" style="cursor: auto;">
+                <h5 id="connectNameHome">
+                    <img src="https://static.zohocdn.com/onezoho/zo/assets/zo/images/fav-icons/connect.7a855dd45f4586c51286ca33aa8edd79.ico"
+                        style="width: 40px; height: 40px ;cursor: pointer;" />
+                    <span style="cursor: pointer;"> CONNECT</span>
+                </h5>
+            </a>
+
+
+            <div id="homeOptionsBox">
+                <ul id="leftTabOptionCont"
+                    style=" width: auto; color: white; margin-top: 30px; display: block; font-size: small;">
+                    <li class="currentNav" style="margin: auto">
+                        <i class="zc-spriteMenu zc-spriteFeed"></i><a href="home.html"
+                            style="border-radius: 0px;background-color: inherit;">My Feed</a>
+                    </li>
+                    <li class="">
+                        <i class="zc-spriteMenu zc-spriteWall"></i><a href="networkWall.html">Network Wall</a>
+                    </li>
+                </ul>
+            </div>
+            <section id="groupsNamesContainer">
+                <div id="leftMenuCont" class="zc-leftGroupMenuCont">
+                    <h4 class="zc-navTitleSmall zc-groupTitle zc-addSection" id="leftSectionCont"
+                        style="display:flex;align-items: first baseline;justify-content: space-between;">
+                        <span>Groups</span>
+                        <span style="cursor: pointer;" onclick="createGrp()">
+                            <a class="avatar zc-light group-colorBg4"
+                                style="font-size: 17px;color: rgba(255, 255, 255, 0.6); background-color: rgba(255, 255, 255, 0.15);width: 24px;height: 24px;">
+                                <i class="fa-solid fa-plus" style="color: #fafafa;"></i>
+                            </a>
+                        </span>
+                    </h4>
+                    <div purpose="leftGroupsMenuContainer" class="zc-leftGroupMenuList" style="padding-left: 10%;">
+                        <ul class="zc-leftMenuBoard zc-grpListing ui-sortable" id="leftGroupsMenuCont"
+                            style="font-size: 16px;">
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="header">
+            <ul style="height: 100%;">
+                <li id="samleSpace">
+                </li>
+                <a class="signIn">
+                    <li>
+                        <h5 class="signIn" onclick="logOut()" style="cursor: pointer;">LOG OUT</h5>
+                    </li>
+                </a>
+            </ul>
+        </section>
+
+        <section id="homeContentContainer">
+            <section id="myFeedsContentContainer">
+                <section
+                    style="width: 100%; background-color: #f4f4f6; height: 200px;padding: 15px;background-image: url(https://static.zohocdn.com/pulse/images/iconBG.6d1f6f36c4d18fd21a976e40d7a20da1.svg);background-repeat: repeat;display: flex;justify-content: center;background-size: 38px;">
+                    <div style="display: flex; gap: 20px;height: 140px;">
+                        <!-- <div id="logoForNeworkWall" style="width: 45px;height: 45px;border-radius: 50%;display: flex;justify-content: center;align-items: center;">
+                            x
+                        </div> -->
+                        <h2 style="font-weight: 100;color: #000;display: flex;align-items: center;">
+                            <a href="" id="userHTMLnameHead" style="text-transform: capitalize;"></a>
+                        </h2>
+                    </div>
+                </section>
+
+                <div id="myFeedsContentBox">
+                    <div id="sortByContainer">
+                        <span class="custom-dropdown small" style="cursor: pointer;">
+                            <select id="sortPosts">
+                                <optgroup label="Sort By">
+                                    <option value="newest">Newest First</option>
+                                    <option value="oldest">Oldest First</option>
+                                </optgroup>
+                            </select>
+                        </span>
+                    </div>
+                    <div id="postContainer" style="margin-bottom: 29px;"></div>
+                    
+
+
+
+                </div>
+
+            </section>
+        </section>
+    </section>
+
+    <script src="Js/user.js"></script>
+</body>
+
+</html>

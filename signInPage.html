@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="Css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="https://www.zohowebstatic.com/sites/zweb/images/favicon.ico" type="image/vnd.microsoft.icon">
+    <title>Sign In To Connect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Itim&family=Noto+Sans+JP:wght@500&family=Roboto:wght@700&family=Ysabeau+Infant:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    </header>
+    <section id="signinPageContainer">
+        <div id="signInPageBoxContainer">
+            <div id="signInPageBox">
+                <div id="signInPageBoxHeader">
+                    <img src="https://www.zohowebstatic.com/sites/zweb/images/commonroot/zoho-logo-web.svg"
+                        style="max-width: 7vw;min-width: 110px;">
+                    <form name="login" id="login">
+                        <div class="signin_head">
+                            <span id="headtitle">Sign in</span>
+                            <div class="service_name">to access <span>Zoho Connect</span></div>
+                        </div>
+                        <div class="fieldcontainer">
+                            <div class="searchparent" id="login_id_container">
+                                <div class="textbox_div" id="getusername">
+                                    <input id="login_id" placeholder="Email address" value="" type="text"
+                                        name="LOGIN_ID" class="textbox" required onkeypress="" onkeyup="" onkeydown=""
+                                        >
+                                </div>
+                            </div>
+                            <div class="getpassword zeroheight" id="password_container">
+                                <div class="textbox_div">
+                                    <input id="password" placeholder="Enter password" name="PASSWORD" type="password"
+                                        class="textbox" required onkeypress=""
+                                        autocapitalize="off" maxlength="25">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn blue" id="signInBtn">Sign In</button>
+                    </form>
+                    
+                </div>
+            </div>
+            <div id="signInPageBoxImages">
+                <div>
+                    <img src="images/mfa_illustration2x.png" id="imageSignIn">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="Js/signIn.js"></script>
+    <script src="Js/script.js"></script>
+    
+</body>
+
+</html>

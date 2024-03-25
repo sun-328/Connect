@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="Css/style.css" rel="stylesheet" type="text/css" />
+    <link href="Css/home.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="icon" href="https://www.zohowebstatic.com/sites/zweb/images/favicon.ico" type="image/vnd.microsoft.icon"> -->
+    <link rel="icon" id="zod-favicon" type="image/png"
+        href="https://static.zohocdn.com/onezoho/zo/assets/zo/images/fav-icons/connect.7a855dd45f4586c51286ca33aa8edd79.ico" />
+    <title>Connect - Feeds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Itim&family=Noto+Sans+JP:wght@500&family=Roboto:wght@700&family=Ysabeau+Infant:ital,wght@1,500&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/06599af46a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section style="height: 100vh; width: 100vw; overflow: hidden">
+        <section id="homeOptionsContainer">
+            <section id="burgerButton">
+                <div style="width: 30px;height: 30px;" onclick="menuResponsive()">
+                    <i class="fa-solid fa-bars" style="color: #1e3050;"></i>
+                </div>
+            </section>
+            <a href="home.html" style="cursor: auto;">
+                <h5 id="connectNameHome">
+                    <img src="https://static.zohocdn.com/onezoho/zo/assets/zo/images/fav-icons/connect.7a855dd45f4586c51286ca33aa8edd79.ico"
+                        style="width: 40px; height: 40px ;cursor: pointer;" />
+                    <span style="cursor: pointer;"> CONNECT</span>
+                </h5>
+            </a>
+
+
+            <div id="homeOptionsBox">
+                <ul id="leftTabOptionCont"
+                    style=" width: auto; color: white; margin-top: 30px; display: block; font-size: small;">
+                    <li class="currentNav" style="margin: auto">
+                        <i class="zc-spriteMenu zc-spriteFeed"></i><a href="home.html">My Feed</a>
+                    </li>
+                    <li class="">
+                        <i class="zc-spriteMenu zc-spriteWall"></i><a href="networkWall.html">Network Wall</a>
+                    </li>
+                </ul>
+            </div>
+            <section id="groupsNamesContainer">
+                <div id="leftMenuCont" class="zc-leftGroupMenuCont">
+                    <h4 class="zc-navTitleSmall zc-groupTitle zc-addSection" id="leftSectionCont"
+                        style="display:flex;align-items: first baseline;justify-content: space-between;">
+                        <span>Groups</span>
+                        <span style="cursor: pointer;" onclick="createGrp()">
+                            <a class="avatar zc-light group-colorBg4"
+                                style="font-size: 17px;color: rgba(255, 255, 255, 0.6); background-color: rgba(255, 255, 255, 0.15);width: 24px;height: 24px;">
+                                <i class="fa-solid fa-plus" style="color: #fafafa;"></i>
+                            </a>
+                        </span>
+                    </h4>
+                    <div purpose="leftGroupsMenuContainer" class="zc-leftGroupMenuList" style="padding-left: 10%;">
+                        <ul class="zc-leftMenuBoard zc-grpListing ui-sortable" id="leftGroupsMenuCont"
+                            style="font-size: 16px;">
+                            <!-- <li name="leftMenuGroupTemplate" style="" class="groupNames">
+                                <a class="avatar zc-light group-colorBg4" style="font-size: 17px;">
+                                    <span>
+                                        T
+                                    </span>
+                                </a>
+                                <a>
+                                    Tech - Tenkasi
+                                </a>
+                            </li>
+                            <li name="leftMenuGroupTemplate" style="" class="groupNames">
+                                <a class="avatar zc-light group-colorBg4" style="font-size: 17px;">
+                                    <span>
+                                        T
+                                    </span>
+                                </a>
+                                <a>
+                                    Tech - Maths Puzzle
+                                    challenge
+                                </a>
+                            </li>
+                            <li name="leftMenuGroupTemplate" style="" class="groupNames">
+                                <a class="avatar zc-light group-colorBg4" style="font-size: 17px;">
+                                    <span>
+                                        T
+                                    </span>
+                                </a>
+                                <a>
+                                    Tech - Raj san
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="header">
+            <ul style="height: 100%;">
+                <li id="samleSpace">
+                </li>
+                <a class="signIn">
+                    <li>
+                        <h5 class="signIn" onclick="logOut()" style="cursor: pointer;">LOG OUT</h5>
+                    </li>
+                </a>
+            </ul>
+        </section>
+
+        <section id="homeContentContainer">
+            <section id="myFeedsContentContainer">
+                <div id="myFeedsContentBox">
+
+                    <div id="CreatePostContainer">
+                        <div id="CreatePostContainerPlaceHolder">
+                            <div class="profile-picture profile" id="userProfile">
+                                <div id="profile-letter" class="profile-letter"></div>
+                            </div>
+                            <p class="lighterTexts" id="WhatsOnMindText">What's on your mind right now?</p>
+                        </div>
+                        <div id="postBox">
+                            <input type="text" id="postTitle" placeholder="Title">
+                            <br>
+                            <div id="postDescription" placeholder="" contenteditable="" style="margin-bottom: 30px;">
+                            </div>
+                            <!-- <textarea id="postDescription" placeholder=""></textarea>? -->
+                            <br>
+                            <div id="postBtnsBox">
+                                <div style="cursor: pointer;">
+                                    <span class="custom-dropdown small">
+                                        <select id="postGroupSelect" style="text-align: center;">
+
+                                        </select>
+                                    </span>
+                                </div>
+
+                                <button id="cancelPostBtn">Cancel</button>
+                                <button id="createPostBtn">Post</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="sortByContainer">
+                        <span class="custom-dropdown small">
+                            <select id="sortPosts">
+                                <optgroup label="Sort By">
+                                    <option value="newest">Newest First</option>
+                                    <option value="oldest">Oldest First</option>
+                                </optgroup>
+                            </select>
+                        </span>
+                    </div>
+                    <div id="postContainer" style="margin-bottom: 29px;"></div>
+
+                </div>
+                
+            </section>
+            <section id="homeExtraContentBox">
+                <div id="homeGroupSuggestBox">
+                    <h3 style="font-weight: 700; font-size: 18px;">Suggested Groups</h3>
+                    <div id="suggestGroupBox">
+                        <ul class="zc-leftMenuBoard zc-grpListing ui-sortable" id="suggestGroupMenuContent"
+                            style="font-size: 16px;">
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <script src="Js/home.js"></script>
+</body>
+
+</html>
